@@ -36,6 +36,9 @@ public sealed class MaterialUpdate : Component
 		{"Material2048", Material2048}
 		};
 
+		if ( GameObject.Tags.ToString() == "0" ) ModelRenderer.Enabled = false;
+		else ModelRenderer.Enabled = true;
+
 		try { ModelRenderer.SetMaterial( MaterialsDictionary[$"Material{GameObject.Tags.ToString()}"] ); }
 		catch { }
 	}

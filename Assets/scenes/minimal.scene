@@ -425,7 +425,71 @@
       "Components": [
         {
           "__type": "BoardManager",
-          "__guid": "261eed25-cb4b-4a9d-a928-eddc7d0cad65"
+          "__guid": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+          "Space00": {
+            "_type": "gameobject",
+            "go": "68ab2994-fb50-4949-8b18-71628607ed12"
+          },
+          "Space01": {
+            "_type": "gameobject",
+            "go": "ccada34e-d412-4018-9df2-ea48c835a365"
+          },
+          "Space02": {
+            "_type": "gameobject",
+            "go": "4d5b38c5-66ae-44e0-a045-fac7e7807dd3"
+          },
+          "Space03": {
+            "_type": "gameobject",
+            "go": "7650279e-6631-4ea9-ad47-6d455201e919"
+          },
+          "Space10": {
+            "_type": "gameobject",
+            "go": "9c5fa493-90f6-4dd0-8925-a602df4a893c"
+          },
+          "Space11": {
+            "_type": "gameobject",
+            "go": "0fc164b8-628e-48a6-827f-6f24f689edcc"
+          },
+          "Space12": {
+            "_type": "gameobject",
+            "go": "cab47eab-c812-4c50-ac12-8a0cf2cc9594"
+          },
+          "Space13": {
+            "_type": "gameobject",
+            "go": "66fc1a67-df99-49f3-90b0-75d2070c83aa"
+          },
+          "Space20": {
+            "_type": "gameobject",
+            "go": "b7c2e80b-1c28-437e-8f79-c33fcf21cb73"
+          },
+          "Space21": {
+            "_type": "gameobject",
+            "go": "36a1f3c3-6fec-440b-a9bd-b9020885b796"
+          },
+          "Space22": {
+            "_type": "gameobject",
+            "go": "ad9561bd-7ff3-4d07-9e12-64b46db21a89"
+          },
+          "Space23": {
+            "_type": "gameobject",
+            "go": "d90ffc30-664f-4277-b3a5-43848379b9f4"
+          },
+          "Space30": {
+            "_type": "gameobject",
+            "go": "0e189118-874b-4f9d-991a-f2f4d68ee8d9"
+          },
+          "Space31": {
+            "_type": "gameobject",
+            "go": "4e45e6a6-94c2-40d6-9dfa-3e12eee3b060"
+          },
+          "Space32": {
+            "_type": "gameobject",
+            "go": "c368e9b3-145c-47f5-825c-8d04cd886947"
+          },
+          "Space33": {
+            "_type": "gameobject",
+            "go": "85a36b4b-53f7-421d-87f1-95a2f38f157e"
+          }
         }
       ],
       "Children": [
@@ -1095,7 +1159,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-23T16:24:26.7669098\u002B01:00",
+  "LastSaved": "2024-04-23T17:19:02.1619906\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
