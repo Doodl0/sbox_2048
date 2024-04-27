@@ -1,7 +1,7 @@
 {
-  "Title": "sbox_2048",
+  "Title": "2048",
   "Type": "game",
-  "Org": "local",
+  "Org": "doodlzero",
   "Ident": "sbox_2048",
   "Tags": null,
   "Schema": 1,
@@ -65,16 +65,21 @@
           "GroupName": "Movement"
         },
         {
-          "Name": "Left",
+          "Name": "West",
           "KeyboardCode": "LEFTARROW",
           "GamepadCode": "DpadWest",
           "GroupName": "Movement"
         },
         {
-          "Name": "Right",
+          "Name": "East",
           "KeyboardCode": "RIGHTARROW",
           "GamepadCode": "DpadEast",
           "GroupName": "Movement"
+        },
+        {
+          "Name": "Restart",
+          "KeyboardCode": "ENTER",
+          "GroupName": "Other"
         }
       ],
       "__guid": "ba52fa61-6bba-4ef1-8430-5fb64ba8f366"

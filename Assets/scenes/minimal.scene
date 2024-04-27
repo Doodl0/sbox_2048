@@ -31,7 +31,7 @@
         {
           "__type": "Sandbox.CameraComponent",
           "__guid": "a7e736d6-fe94-4134-b306-9b9ad535e341",
-          "BackgroundColor": "0,0.96667,1,1",
+          "BackgroundColor": "1,1,1,1",
           "ClearFlags": "All",
           "FieldOfView": 60,
           "IsMainCamera": true,
@@ -426,76 +426,88 @@
         {
           "__type": "BoardManager",
           "__guid": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+          "LoseScreen": {
+            "_type": "component",
+            "component_id": "73c4938e-7386-4f25-8ea4-628b0240202c",
+            "go": "16dce75a-08e9-4280-bd75-ba38ed1a0b5c",
+            "component_type": "GameEnd"
+          },
           "Space00": {
-            "_type": "gameobject",
-            "go": "68ab2994-fb50-4949-8b18-71628607ed12"
-          },
-          "Space01": {
-            "_type": "gameobject",
-            "go": "ccada34e-d412-4018-9df2-ea48c835a365"
-          },
-          "Space02": {
-            "_type": "gameobject",
-            "go": "4d5b38c5-66ae-44e0-a045-fac7e7807dd3"
-          },
-          "Space03": {
-            "_type": "gameobject",
-            "go": "7650279e-6631-4ea9-ad47-6d455201e919"
-          },
-          "Space10": {
-            "_type": "gameobject",
-            "go": "9c5fa493-90f6-4dd0-8925-a602df4a893c"
-          },
-          "Space11": {
-            "_type": "gameobject",
-            "go": "0fc164b8-628e-48a6-827f-6f24f689edcc"
-          },
-          "Space12": {
-            "_type": "gameobject",
-            "go": "cab47eab-c812-4c50-ac12-8a0cf2cc9594"
-          },
-          "Space13": {
-            "_type": "gameobject",
-            "go": "66fc1a67-df99-49f3-90b0-75d2070c83aa"
-          },
-          "Space20": {
-            "_type": "gameobject",
-            "go": "b7c2e80b-1c28-437e-8f79-c33fcf21cb73"
-          },
-          "Space21": {
-            "_type": "gameobject",
-            "go": "36a1f3c3-6fec-440b-a9bd-b9020885b796"
-          },
-          "Space22": {
-            "_type": "gameobject",
-            "go": "ad9561bd-7ff3-4d07-9e12-64b46db21a89"
-          },
-          "Space23": {
-            "_type": "gameobject",
-            "go": "d90ffc30-664f-4277-b3a5-43848379b9f4"
-          },
-          "Space30": {
             "_type": "gameobject",
             "go": "0e189118-874b-4f9d-991a-f2f4d68ee8d9"
           },
-          "Space31": {
+          "Space01": {
             "_type": "gameobject",
             "go": "4e45e6a6-94c2-40d6-9dfa-3e12eee3b060"
           },
-          "Space32": {
+          "Space02": {
             "_type": "gameobject",
             "go": "c368e9b3-145c-47f5-825c-8d04cd886947"
           },
-          "Space33": {
+          "Space03": {
             "_type": "gameobject",
             "go": "85a36b4b-53f7-421d-87f1-95a2f38f157e"
+          },
+          "Space10": {
+            "_type": "gameobject",
+            "go": "b7c2e80b-1c28-437e-8f79-c33fcf21cb73"
+          },
+          "Space11": {
+            "_type": "gameobject",
+            "go": "36a1f3c3-6fec-440b-a9bd-b9020885b796"
+          },
+          "Space12": {
+            "_type": "gameobject",
+            "go": "ad9561bd-7ff3-4d07-9e12-64b46db21a89"
+          },
+          "Space13": {
+            "_type": "gameobject",
+            "go": "d90ffc30-664f-4277-b3a5-43848379b9f4"
+          },
+          "Space20": {
+            "_type": "gameobject",
+            "go": "9c5fa493-90f6-4dd0-8925-a602df4a893c"
+          },
+          "Space21": {
+            "_type": "gameobject",
+            "go": "0fc164b8-628e-48a6-827f-6f24f689edcc"
+          },
+          "Space22": {
+            "_type": "gameobject",
+            "go": "cab47eab-c812-4c50-ac12-8a0cf2cc9594"
+          },
+          "Space23": {
+            "_type": "gameobject",
+            "go": "66fc1a67-df99-49f3-90b0-75d2070c83aa"
+          },
+          "Space30": {
+            "_type": "gameobject",
+            "go": "68ab2994-fb50-4949-8b18-71628607ed12"
+          },
+          "Space31": {
+            "_type": "gameobject",
+            "go": "ccada34e-d412-4018-9df2-ea48c835a365"
+          },
+          "Space32": {
+            "_type": "gameobject",
+            "go": "4d5b38c5-66ae-44e0-a045-fac7e7807dd3"
+          },
+          "Space33": {
+            "_type": "gameobject",
+            "go": "7650279e-6631-4ea9-ad47-6d455201e919"
+          },
+          "WinScreen": {
+            "_type": "component",
+            "component_id": "76a41f65-70a1-4c62-aa4a-2bd9ba5b4776",
+            "go": "e6eb3e16-1b57-46a3-82af-2cccfc68bf85",
+            "component_type": "GameEnd"
           }
         }
       ],
       "Children": [
         {
           "__guid": "85a36b4b-53f7-421d-87f1-95a2f38f157e",
-          "Name": "3,3",
+          "Name": "0,3",
           "Position": "29.16667,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -535,7 +547,7 @@
         },
         {
           "__guid": "c368e9b3-145c-47f5-825c-8d04cd886947",
-          "Name": "3,2",
+          "Name": "0,2",
           "Position": "9.722222,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -575,7 +587,7 @@
         },
         {
           "__guid": "4e45e6a6-94c2-40d6-9dfa-3e12eee3b060",
-          "Name": "3,1",
+          "Name": "0,1",
           "Position": "-9.722222,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -615,7 +627,7 @@
         },
         {
           "__guid": "0e189118-874b-4f9d-991a-f2f4d68ee8d9",
-          "Name": "3,0",
+          "Name": "0,0",
           "Position": "-29.16667,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -655,7 +667,7 @@
         },
         {
           "__guid": "d90ffc30-664f-4277-b3a5-43848379b9f4",
-          "Name": "2,3",
+          "Name": "1,3",
           "Position": "29.16667,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -695,7 +707,7 @@
         },
         {
           "__guid": "ad9561bd-7ff3-4d07-9e12-64b46db21a89",
-          "Name": "2,2",
+          "Name": "1,2",
           "Position": "9.722222,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -735,7 +747,7 @@
         },
         {
           "__guid": "36a1f3c3-6fec-440b-a9bd-b9020885b796",
-          "Name": "2,1",
+          "Name": "1,1",
           "Position": "-9.722222,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -775,7 +787,7 @@
         },
         {
           "__guid": "b7c2e80b-1c28-437e-8f79-c33fcf21cb73",
-          "Name": "2,0",
+          "Name": "1,0",
           "Position": "-29.16667,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -815,7 +827,7 @@
         },
         {
           "__guid": "66fc1a67-df99-49f3-90b0-75d2070c83aa",
-          "Name": "1,3",
+          "Name": "2,3",
           "Position": "29.16667,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -855,7 +867,7 @@
         },
         {
           "__guid": "cab47eab-c812-4c50-ac12-8a0cf2cc9594",
-          "Name": "1,2",
+          "Name": "2,2",
           "Position": "9.722222,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -895,7 +907,7 @@
         },
         {
           "__guid": "0fc164b8-628e-48a6-827f-6f24f689edcc",
-          "Name": "1,1",
+          "Name": "2,1",
           "Position": "-9.722222,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -935,7 +947,7 @@
         },
         {
           "__guid": "9c5fa493-90f6-4dd0-8925-a602df4a893c",
-          "Name": "1,0",
+          "Name": "2,0",
           "Position": "-29.16667,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -975,7 +987,7 @@
         },
         {
           "__guid": "7650279e-6631-4ea9-ad47-6d455201e919",
-          "Name": "0,3",
+          "Name": "3,3",
           "Position": "29.16667,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -1015,7 +1027,7 @@
         },
         {
           "__guid": "4d5b38c5-66ae-44e0-a045-fac7e7807dd3",
-          "Name": "0,2",
+          "Name": "3,2",
           "Position": "9.722222,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -1055,7 +1067,7 @@
         },
         {
           "__guid": "ccada34e-d412-4018-9df2-ea48c835a365",
-          "Name": "0,1",
+          "Name": "3,1",
           "Position": "-9.722222,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -1095,7 +1107,7 @@
         },
         {
           "__guid": "68ab2994-fb50-4949-8b18-71628607ed12",
-          "Name": "0,0",
+          "Name": "3,0",
           "Position": "-29.16667,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
@@ -1134,6 +1146,184 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "16dce75a-08e9-4280-bd75-ba38ed1a0b5c",
+      "Name": "Game Over",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "GameEnd",
+          "__guid": "73c4938e-7386-4f25-8ea4-628b0240202c",
+          "Frame": {
+            "_type": "component",
+            "component_id": "cfc39a63-f111-4a00-be19-30272dd89fe8",
+            "go": "7505deb9-fe55-47f6-aaac-b979fff16424",
+            "component_type": "ModelRenderer"
+          },
+          "Subtitle": {
+            "_type": "component",
+            "component_id": "18e98746-8089-4b70-aa98-28173dd6229f",
+            "go": "8f30ad7e-a87a-4f11-a062-cca8b616fb3c",
+            "component_type": "TextRenderer"
+          },
+          "Title": {
+            "_type": "component",
+            "component_id": "fbc9459b-96c2-40fb-93dd-02e05d6da1dd",
+            "go": "a70ccfd9-387c-4136-89b2-f9aaa8d90a5d",
+            "component_type": "TextRenderer"
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "7505deb9-fe55-47f6-aaac-b979fff16424",
+          "Name": "Plane",
+          "Position": "0,0,20",
+          "Scale": "2,4.25,1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "cfc39a63-f111-4a00-be19-30272dd89fe8",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/vmat/sky.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "a70ccfd9-387c-4136-89b2-f9aaa8d90a5d",
+          "Name": "Text",
+          "Position": "-30,-0.000006103568,25",
+          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "fbc9459b-96c2-40fb-93dd-02e05d6da1dd",
+              "Color": "1,1,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "Scale": 0.66,
+              "Text": "Game Over"
+            }
+          ]
+        },
+        {
+          "__guid": "8f30ad7e-a87a-4f11-a062-cca8b616fb3c",
+          "Name": "Text",
+          "Position": "30,-0.000006103568,25",
+          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "18e98746-8089-4b70-aa98-28173dd6229f",
+              "Color": "1,1,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "Scale": 0.31,
+              "Text": "Press Enter / \u24B6  to restart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "e6eb3e16-1b57-46a3-82af-2cccfc68bf85",
+      "Name": "You Win",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "GameEnd",
+          "__guid": "76a41f65-70a1-4c62-aa4a-2bd9ba5b4776",
+          "Frame": {
+            "_type": "component",
+            "component_id": "fd4a2988-6d11-42c8-820c-5d3c22a72e77",
+            "go": "4adb6478-a634-4636-8cd4-3c02ff06d0a1",
+            "component_type": "ModelRenderer"
+          },
+          "Subtitle": {
+            "_type": "component",
+            "component_id": "af69a4a7-d9a1-47d0-9c47-9f63f6b8cfd5",
+            "go": "46d1c499-7e2c-40cc-90f2-9d2d0b5490b3",
+            "component_type": "TextRenderer"
+          },
+          "Title": {
+            "_type": "component",
+            "component_id": "419301a4-6868-4545-bc73-0d6f1f0f8ca7",
+            "go": "cc625430-6b03-4814-9a32-455d241468cf",
+            "component_type": "TextRenderer"
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4adb6478-a634-4636-8cd4-3c02ff06d0a1",
+          "Name": "Plane",
+          "Position": "0,0,20",
+          "Scale": "2,4.25,1",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fd4a2988-6d11-42c8-820c-5d3c22a72e77",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/vmat/sky.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "cc625430-6b03-4814-9a32-455d241468cf",
+          "Name": "Text",
+          "Position": "-30,-0.000006103568,25",
+          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "419301a4-6868-4545-bc73-0d6f1f0f8ca7",
+              "Color": "1,1,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "Scale": 0.66,
+              "Text": "You Wim"
+            }
+          ]
+        },
+        {
+          "__guid": "46d1c499-7e2c-40cc-90f2-9d2d0b5490b3",
+          "Name": "Text",
+          "Position": "30,-0.000006103568,25",
+          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "af69a4a7-d9a1-47d0-9c47-9f63f6b8cfd5",
+              "Color": "1,1,1,1",
+              "FontFamily": "Poppins",
+              "FontSize": 64,
+              "Scale": 0.31,
+              "Text": "Press Enter / \u24B6  to restart"
+            }
+          ]
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1159,7 +1349,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-23T17:19:02.1619906\u002B01:00",
+  "LastSaved": "2024-04-27T16:52:01.4944499\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []
