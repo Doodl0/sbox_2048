@@ -51,6 +51,8 @@ public sealed class BoardManager : Component
 		{false, false, false, false },
 	};
 
+	public int Score = 0;
+
 	protected override void OnAwake()
 	{
 		NewGame();
@@ -145,6 +147,7 @@ public sealed class BoardManager : Component
 					if ( BoardWorking[y, x] == BoardWorking[y, x + 1] && BoardMerged[y, x + 1] == false )
 					{
 						BoardWorking[y, x + 1] *= 2;
+						Score += BoardWorking[y, x] * 2;
 						BoardMerged[y, x + 1] = true;
 						BoardWorking[y, x] = 0;
 						x--;
@@ -184,6 +187,7 @@ public sealed class BoardManager : Component
 					if ( BoardWorking[y, x] == BoardWorking[y, x - 1] && BoardMerged[y, x - 1] == false )
 					{
 						BoardWorking[y, x - 1] *= 2;
+						Score += BoardWorking[y, x] * 2;
 						BoardMerged[y, x - 1] = true;
 						BoardWorking[y, x] = 0;
 						x -= 2;
@@ -223,6 +227,7 @@ public sealed class BoardManager : Component
 					if ( BoardWorking[y, x] == BoardWorking[y + 1, x] && BoardMerged[y + 1, x] == false )
 					{
 						BoardWorking[y + 1, x] *= 2;
+						Score += BoardWorking[y, x] * 2;
 						BoardMerged[y + 1, x] = true;
 						BoardWorking[y, x] = 0;
 						y += 1;
@@ -262,7 +267,7 @@ public sealed class BoardManager : Component
 					if ( BoardWorking[y, x] == BoardWorking[y - 1, x] && BoardMerged[y - 1, x] == false )
 					{
 						BoardWorking[y - 1, x] *= 2;
-						Log.Info( BoardWorking[x, y] * 2 );
+						Score += BoardWorking[y, x] * 2;
 						BoardMerged[y - 1, x] = true;
 						BoardWorking[y, x] = 0;
 						y -= 2;
@@ -357,6 +362,7 @@ public sealed class BoardManager : Component
 
 	void NewGame()
 	{
+		Score = 0;
 		ResetBoardMereged();
 		for ( int x = 0; x <= 3; x++ )
 		{
