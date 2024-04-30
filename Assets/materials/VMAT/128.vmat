@@ -12,7 +12,7 @@ Layer0
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[0.196078 0.803922 0.196078 1.000000]"
-	TextureColor "materials/TGA/128.tga"
+	TextureColor "materials/TGA/Poppins/128.tga"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"

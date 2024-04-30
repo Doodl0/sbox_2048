@@ -8,6 +8,7 @@
       "Tags": "light_directional,light",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.DirectionalLight",
@@ -27,6 +28,7 @@
       "Rotation": "0.7071068,-0.00000003090862,-0.7071068,-0.00000003090862",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.CameraComponent",
@@ -98,6 +100,7 @@
       "Scale": "5,5,5",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ModelRenderer",
@@ -117,6 +120,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -136,6 +140,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -155,6 +160,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -174,6 +180,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -193,6 +200,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -212,6 +220,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -231,6 +240,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -250,6 +260,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -269,6 +280,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -288,6 +300,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -307,6 +320,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -326,6 +340,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -345,6 +360,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -364,6 +380,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -383,6 +400,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -402,6 +420,7 @@
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -422,6 +441,7 @@
       "Scale": "6,6,5",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "BoardManager",
@@ -512,6 +532,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -552,6 +573,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -592,6 +614,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -632,6 +655,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -672,6 +696,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -712,6 +737,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -752,6 +778,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -792,6 +819,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -832,6 +860,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -872,6 +901,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -912,6 +942,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -952,6 +983,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -992,6 +1024,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1032,6 +1065,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1072,6 +1106,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1112,6 +1147,7 @@
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1152,6 +1188,7 @@
       "Name": "Game Over",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "GameEnd",
@@ -1184,6 +1221,7 @@
           "Scale": "2,4.25,1",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1203,6 +1241,7 @@
           "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.TextRenderer",
@@ -1222,6 +1261,7 @@
           "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.TextRenderer",
@@ -1241,6 +1281,7 @@
       "Name": "You Win",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "GameEnd",
@@ -1273,6 +1314,7 @@
           "Scale": "2,4.25,1",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1292,6 +1334,7 @@
           "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.TextRenderer",
@@ -1311,6 +1354,7 @@
           "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.TextRenderer",
@@ -1324,13 +1368,41 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "94716edc-7c76-4373-9068-f18a964d0e37",
+      "Name": "Screen",
+      "Position": "99.73836,80.26717,80.5116",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "ad254495-64da-4ad6-a999-4ab166bd38df",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "ScoreHud",
+          "__guid": "443d32f9-8520-4595-87a2-a227c2ec601f",
+          "BoardManager": {
+            "_type": "component",
+            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardManager"
+          }
+        }
+      ]
     }
   ],
   "SceneProperties": {
     "FixedUpdateFrequency": 50,
-    "Lerping": true,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -1349,7 +1421,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-27T16:52:01.4944499\u002B01:00",
+  "LastSaved": "2024-04-30T22:08:18.8081493\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

@@ -1,0 +1,25 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="Score">
+        <p>
+            Score:
+            <t>
+                @BoardManager.Score
+            </t>
+        </p>
+    </div>
+</root>
+
+@code
+{
+    [Property] BoardManager BoardManager { get; set; }
+
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( BoardManager.Score );
+}
