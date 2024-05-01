@@ -334,7 +334,7 @@ public sealed class BoardManager : Component
 				if ( BoardWorking[y, x] >= 2048 ) 
 				{
 					WinScreen.Enabled = true;
-					Sandbox.Services.Stats.SetValue( "topscore", Score );
+					Sandbox.Services.Stats.SetValue( "score", Score );
 					return true;
 				}
 			}
@@ -357,7 +357,7 @@ public sealed class BoardManager : Component
 		}
 
 		LoseScreen.Enabled = true;
-		Sandbox.Services.Stats.SetValue( "topscore", Score );
+		Sandbox.Services.Stats.SetValue( "score", Score );
 		return true;
 	}
 
