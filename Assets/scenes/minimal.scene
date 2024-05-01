@@ -1240,7 +1240,19 @@
       "Components": [
         {
           "__type": "Scoreboard",
-          "__guid": "53bfdea2-d875-4e59-845b-c2a58cf6eba0"
+          "__guid": "53bfdea2-d875-4e59-845b-c2a58cf6eba0",
+          "LoseScreen": {
+            "_type": "component",
+            "component_id": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
+            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
+            "component_type": "Lose"
+          },
+          "WinScreen": {
+            "_type": "component",
+            "component_id": "c63ba957-6420-479d-81ff-9bcb617b32c3",
+            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
+            "component_type": "Win"
+          }
         }
       ]
     }
@@ -1268,7 +1280,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-05-01T20:23:03.3008263\u002B01:00",
+  "LastSaved": "2024-05-01T21:33:21.8198506\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

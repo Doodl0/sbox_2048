@@ -106,11 +106,6 @@ public sealed class BoardManager : Component
 		};
 
 		Board = BoardWorking;
-		Log.Info( "----------------" );
-		for ( int i = 0; i <= 3; i++ )
-		{
-			Log.Info( $"{Board[i,0]}, {Board[i, 1]}, {Board[i, 2]}, {Board[i, 3]}" );
-		}
 
 		for ( int x = 0; x <= 3; x++ )
 		{
@@ -333,8 +328,8 @@ public sealed class BoardManager : Component
 			{
 				if ( BoardWorking[y, x] >= 2048 ) 
 				{
-					WinScreen.Enabled = true;
 					Sandbox.Services.Stats.SetValue( "score", Score );
+					WinScreen.Enabled = true;
 					return true;
 				}
 			}
@@ -356,8 +351,8 @@ public sealed class BoardManager : Component
 			}
 		}
 
-		LoseScreen.Enabled = true;
 		Sandbox.Services.Stats.SetValue( "score", Score );
+		LoseScreen.Enabled = true;
 		return true;
 	}
 
