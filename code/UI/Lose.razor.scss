@@ -8,6 +8,7 @@ Lose {
 	align-items: center;
 	font-weight: bold;
 	border-radius: 20px;
+	font-family: Poppins;
 
 	.win {
 		justify-content: center;
@@ -16,6 +17,7 @@ Lose {
 		padding: 50px;
 		background-color: #070707;
 		white-space: pre-line;
+		font-weight: bold;
 	}
 
 	.title {
@@ -23,5 +25,6 @@ Lose {
 		font-size: 64px;
 		text-align: center;
 		color: white;
+		font-weight: bold;
 	}
 }

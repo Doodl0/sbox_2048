@@ -448,9 +448,9 @@
           "__guid": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
           "LoseScreen": {
             "_type": "component",
-            "component_id": "73c4938e-7386-4f25-8ea4-628b0240202c",
-            "go": "16dce75a-08e9-4280-bd75-ba38ed1a0b5c",
-            "component_type": "GameEnd"
+            "component_id": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
+            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
+            "component_type": "Lose"
           },
           "Space00": {
             "_type": "gameobject",
@@ -518,9 +518,9 @@
           },
           "WinScreen": {
             "_type": "component",
-            "component_id": "76a41f65-70a1-4c62-aa4a-2bd9ba5b4776",
-            "go": "e6eb3e16-1b57-46a3-82af-2cccfc68bf85",
-            "component_type": "GameEnd"
+            "component_id": "c63ba957-6420-479d-81ff-9bcb617b32c3",
+            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
+            "component_type": "Win"
           }
         }
       ],
@@ -1184,192 +1184,6 @@
       ]
     },
     {
-      "__guid": "16dce75a-08e9-4280-bd75-ba38ed1a0b5c",
-      "Name": "Game Over",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "GameEnd",
-          "__guid": "73c4938e-7386-4f25-8ea4-628b0240202c",
-          "Frame": {
-            "_type": "component",
-            "component_id": "cfc39a63-f111-4a00-be19-30272dd89fe8",
-            "go": "7505deb9-fe55-47f6-aaac-b979fff16424",
-            "component_type": "ModelRenderer"
-          },
-          "Subtitle": {
-            "_type": "component",
-            "component_id": "18e98746-8089-4b70-aa98-28173dd6229f",
-            "go": "8f30ad7e-a87a-4f11-a062-cca8b616fb3c",
-            "component_type": "TextRenderer"
-          },
-          "Title": {
-            "_type": "component",
-            "component_id": "fbc9459b-96c2-40fb-93dd-02e05d6da1dd",
-            "go": "a70ccfd9-387c-4136-89b2-f9aaa8d90a5d",
-            "component_type": "TextRenderer"
-          }
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "7505deb9-fe55-47f6-aaac-b979fff16424",
-          "Name": "Plane",
-          "Position": "0,0,20",
-          "Scale": "2,4.25,1",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "cfc39a63-f111-4a00-be19-30272dd89fe8",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/error.vmat",
-              "Model": "models/dev/plane.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "a70ccfd9-387c-4136-89b2-f9aaa8d90a5d",
-          "Name": "Text",
-          "Position": "-30,-0.000006103568,25",
-          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.TextRenderer",
-              "__guid": "fbc9459b-96c2-40fb-93dd-02e05d6da1dd",
-              "Color": "1,1,1,1",
-              "FontFamily": "Poppins",
-              "FontSize": 64,
-              "Scale": 0.66,
-              "Text": "Game Over"
-            }
-          ]
-        },
-        {
-          "__guid": "8f30ad7e-a87a-4f11-a062-cca8b616fb3c",
-          "Name": "Text",
-          "Position": "30,-0.000006103568,25",
-          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.TextRenderer",
-              "__guid": "18e98746-8089-4b70-aa98-28173dd6229f",
-              "Color": "1,1,1,1",
-              "FontFamily": "Poppins",
-              "FontSize": 64,
-              "Scale": 0.31,
-              "Text": "Press Enter / \u24B6  to restart"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "__guid": "e6eb3e16-1b57-46a3-82af-2cccfc68bf85",
-      "Name": "You Win",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "GameEnd",
-          "__guid": "76a41f65-70a1-4c62-aa4a-2bd9ba5b4776",
-          "Frame": {
-            "_type": "component",
-            "component_id": "fd4a2988-6d11-42c8-820c-5d3c22a72e77",
-            "go": "4adb6478-a634-4636-8cd4-3c02ff06d0a1",
-            "component_type": "ModelRenderer"
-          },
-          "Subtitle": {
-            "_type": "component",
-            "component_id": "af69a4a7-d9a1-47d0-9c47-9f63f6b8cfd5",
-            "go": "46d1c499-7e2c-40cc-90f2-9d2d0b5490b3",
-            "component_type": "TextRenderer"
-          },
-          "Title": {
-            "_type": "component",
-            "component_id": "419301a4-6868-4545-bc73-0d6f1f0f8ca7",
-            "go": "cc625430-6b03-4814-9a32-455d241468cf",
-            "component_type": "TextRenderer"
-          }
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "4adb6478-a634-4636-8cd4-3c02ff06d0a1",
-          "Name": "Plane",
-          "Position": "0,0,20",
-          "Scale": "2,4.25,1",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "fd4a2988-6d11-42c8-820c-5d3c22a72e77",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/error.vmat",
-              "Model": "models/dev/plane.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "__guid": "cc625430-6b03-4814-9a32-455d241468cf",
-          "Name": "Text",
-          "Position": "-30,-0.000006103568,25",
-          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.TextRenderer",
-              "__guid": "419301a4-6868-4545-bc73-0d6f1f0f8ca7",
-              "Color": "1,1,1,1",
-              "FontFamily": "Poppins",
-              "FontSize": 64,
-              "Scale": 0.66,
-              "Text": "You Wim"
-            }
-          ]
-        },
-        {
-          "__guid": "46d1c499-7e2c-40cc-90f2-9d2d0b5490b3",
-          "Name": "Text",
-          "Position": "30,-0.000006103568,25",
-          "Rotation": "-0.7071068,-0.00000003090862,0.7071068,-0.00000003090862",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.TextRenderer",
-              "__guid": "af69a4a7-d9a1-47d0-9c47-9f63f6b8cfd5",
-              "Color": "1,1,1,1",
-              "FontFamily": "Poppins",
-              "FontSize": 64,
-              "Scale": 0.31,
-              "Text": "Press Enter / \u24B6  to restart"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "__guid": "94716edc-7c76-4373-9068-f18a964d0e37",
       "Name": "Screen",
       "Enabled": true,
@@ -1395,22 +1209,40 @@
           }
         },
         {
+          "__type": "TopScoreHud",
+          "__guid": "49d6df71-135d-4053-b3dd-e123ef6013ac",
+          "scoreboard": {
+            "_type": "component",
+            "component_id": "53bfdea2-d875-4e59-845b-c2a58cf6eba0",
+            "go": "978cddea-db9a-4bb5-8634-4349beb55be3",
+            "component_type": "Scoreboard"
+          }
+        },
+        {
           "__type": "Win",
-          "__guid": "c63ba957-6420-479d-81ff-9bcb617b32c3"
+          "__guid": "c63ba957-6420-479d-81ff-9bcb617b32c3",
+          "__enabled": false
         },
         {
           "__type": "Lose",
-          "__guid": "7bd3b8f9-3fe3-4237-ab94-40446fda31df"
+          "__guid": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
+          "__enabled": false
         }
       ]
     },
     {
-      "__guid": "39c6d20f-402f-43c5-a92c-66246fc75dca",
+      "__guid": "978cddea-db9a-4bb5-8634-4349beb55be3",
       "Name": "Scoreboard",
-      "Position": "200.8253,-38.97641,696.3347",
+      "Position": "109.3316,-27.61295,337.7981",
       "Enabled": true,
       "NetworkMode": 2,
-      "NetworkInterpolation": true
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Scoreboard",
+          "__guid": "53bfdea2-d875-4e59-845b-c2a58cf6eba0"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1436,7 +1268,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-05-01T17:28:57.7510311\u002B01:00",
+  "LastSaved": "2024-05-01T20:23:03.3008263\u002B01:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": []

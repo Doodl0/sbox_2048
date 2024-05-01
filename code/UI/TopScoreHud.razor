@@ -1,0 +1,26 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="scoretitle">
+        <p>
+            Top Score
+        </p>
+    </div>
+    <div class="score">
+        <p>
+            @scoreboard.playerscore
+        </p>
+    </div>
+</root>
+
+@code
+{
+    [Property] Scoreboard scoreboard { get; set; }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( scoreboard.playerscore );
+}
