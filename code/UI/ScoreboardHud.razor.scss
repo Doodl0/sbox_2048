@@ -1,0 +1,182 @@
+ScoreboardHud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	text-align: left;
+	font-weight: bold;
+	font-family: Poppins;
+	font-size: 24px;
+	white-space: pre-line;
+
+	> .title {
+		position: absolute;
+		left: 25px;
+		top: 0px;
+		font-size: 56px;
+		font-weight: bold;
+		white-space: pre-line;
+	}
+
+	> .scoreboard1 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 75px;
+		font-size: 32px;
+	}
+
+	> .scoreboard2 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 125px;
+		font-size: 32px;
+	}
+
+	> .scoreboard3 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 175px;
+		font-size: 32px;
+	}
+
+	> .scoreboard4 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 225px;
+		font-size: 32px;
+	}
+
+	> .scoreboard5 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 275px;
+		font-size: 32px;
+	}
+
+	> .scoreboard6 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 325px;
+		font-size: 32px;
+	}
+
+	> .scoreboard7 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 375px;
+		font-size: 32px;
+	}
+
+	> .scoreboard8 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 425px;
+		font-size: 32px;
+	}
+
+	> .scoreboard9 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 475px;
+		font-size: 32px;
+	}
+
+	> .scoreboard10 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 525px;
+		font-size: 32px;
+	}
+
+	> .scoreboard11 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 575px;
+		font-size: 32px;
+	}
+
+	> .scoreboard12 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 625px;
+		font-size: 32px;
+	}
+
+	> .scoreboard13 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 675px;
+		font-size: 32px;
+	}
+
+	> .scoreboard14 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 725px;
+		font-size: 32px;
+	}
+
+	> .scoreboard15 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 775px;
+		font-size: 32px;
+	}
+
+	> .scoreboard16 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 825px;
+		font-size: 32px;
+	}
+
+	> .scoreboard17 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 875px;
+		font-size: 32px;
+	}
+
+	> .scoreboard18 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 925px;
+		font-size: 32px;
+	}
+
+	> .scoreboard19 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 975px;
+		font-size: 32px;
+	}
+
+	> .scoreboard20 {
+		width: 25%;
+		position: absolute;
+		left: 25px;
+		top: 1025px;
+		font-size: 32px;
+	}
+}

@@ -11,7 +11,7 @@ TopScoreHud {
 	> .scoretitle {
 		position: absolute;
 		top: 300px;
-		left: 1535px;
+		right: 25px;
 		text-align: left;
 		font-size: 64px;
 		font-weight: bold;
@@ -20,8 +20,7 @@ TopScoreHud {
 	> .score {
 		position: absolute;
 		top: 375px;
-		left: 1535px;
-		right: 0;
+		right: 25px;
 		text-align: left;
 		font-size: 96px;
 		font-weight: bold;

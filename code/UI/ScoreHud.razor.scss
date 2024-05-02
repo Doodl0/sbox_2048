@@ -10,7 +10,7 @@ ScoreHud {
 	> .scoretitle {
 		position: absolute;
 		top: 0px;
-		left: 1535px;
+		right: 25px;
 		text-align: left;
 		font-size: 64px;
 		font-weight: bold;
@@ -19,8 +19,7 @@ ScoreHud {
 	> .score {
 		position: absolute;
 		top: 75px;
-		left: 1535px;
-		right: 0;
+		right: 25px;
 		text-align: left;
 		font-size: 96px;
 		font-weight: bold;

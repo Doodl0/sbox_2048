@@ -1,25 +1,57 @@
-using Sandbox;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using static Sandbox.Services.Leaderboards;
 
 public sealed class Scoreboard : Component
 {
-	[Property] Win WinScreen { get; set; }
-	[Property] Lose LoseScreen { get; set; }
-	public string playerscore { get; private set; } = "cannot find";
-	public string previousscore { get; private set; } = "cannot find";
+	public string playerscore { get; set; } = "0";
+	public List<string> leaderboard { get; set; } = new List<string> { };
+	public int Me {  get; set; }
+
+	public bool updated { get; set; }
 	protected override async void OnAwake()
 	{
 		var scoreboard = Sandbox.Services.Leaderboards.Get( "topscore" );
-		scoreboard.Group = "global";
+		await scoreboard.Refresh();
+		UpdatePlayerTopScore();
+		UpdateLeaderboard();
+	}
+	protected override async void OnFixedUpdate()
+	{
+		updated = false;
+		var scoreboard = Sandbox.Services.Leaderboards.Get( "topscore" );
+		scoreboard.MaxEntries = 1;
+		await scoreboard.Refresh();
+		if ( scoreboard.Entries[0].FormattedValue != playerscore )
+		{
+			UpdatePlayerTopScore();
+			UpdateLeaderboard();
+		}
+		updated = true;
+	}
+
+	async void UpdatePlayerTopScore()
+	{
+		var scoreboard = Sandbox.Services.Leaderboards.Get( "topscore" );
 		scoreboard.MaxEntries = 1;
 		await scoreboard.Refresh();
 		playerscore = scoreboard.Entries[0].FormattedValue;
-		previousscore = playerscore;
 	}
-	protected override async void OnUpdate()
+
+	public async void UpdateLeaderboard()
 	{
-		var scoreboard = Sandbox.Services.Leaderboards.Get( "topscore" );
+		var scoreboard = Get( "topscore" );
+		scoreboard.MaxEntries = 20;
 		await scoreboard.Refresh();
-		playerscore = scoreboard.Entries[0].FormattedValue;
+		leaderboard.RemoveRange(0, leaderboard.Count);
+
+		foreach ( var e in scoreboard.Entries )
+		{
+			Log.Info( $"[{e.Rank}] {e.DisplayName} - {e.Value}" );
+			leaderboard.Add( $"[{e.Rank}] {e.DisplayName} - {e.Value}" );
+			if ( e.Me ) { Me = leaderboard.Count; }
+			Log.Info( leaderboard );
+		}
+		Log.Info(Me);
 	}
 }
