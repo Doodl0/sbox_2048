@@ -85,6 +85,48 @@
       "Enabled": true,
       "Components": [
         {
+          "__type": "HighScoreUI",
+          "__guid": "9863a7d8-b40a-4456-932f-509859be9a0f",
+          "BoardManager": {
+            "_type": "component",
+            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardManager"
+          },
+          "leaderboard": {
+            "_type": "component",
+            "component_id": "5c3b7605-26d3-478a-ab42-87178eb58475",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "ScoreboardUI"
+          }
+        },
+        {
+          "__type": "ScoreUI",
+          "__guid": "25d34200-ddca-483f-8fc5-b8843d944579",
+          "BoardManager": {
+            "_type": "component",
+            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardManager"
+          }
+        },
+        {
+          "__type": "ScoreboardUI",
+          "__guid": "5c3b7605-26d3-478a-ab42-87178eb58475"
+        },
+        {
+          "__type": "EndPopup",
+          "__guid": "144914da-9c97-4a8a-9d3c-f57718488a9f",
+          "__enabled": false,
+          "TitleContents": "Game Over"
+        },
+        {
+          "__type": "EndPopup",
+          "__guid": "faef1e85-f73d-46fb-88e4-60c0a3b56a40",
+          "__enabled": false,
+          "TitleContents": "You Win"
+        },
+        {
           "__type": "BoardManager",
           "__guid": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
           "boardUI": {
@@ -93,17 +135,29 @@
             "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
             "component_type": "BoardUI"
           },
+          "highScoreUI": {
+            "_type": "component",
+            "component_id": "9863a7d8-b40a-4456-932f-509859be9a0f",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "HighScoreUI"
+          },
           "LoseScreen": {
             "_type": "component",
-            "component_id": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
-            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
-            "component_type": "Lose"
+            "component_id": "144914da-9c97-4a8a-9d3c-f57718488a9f",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "EndPopup"
+          },
+          "scoreboard": {
+            "_type": "component",
+            "component_id": "5c3b7605-26d3-478a-ab42-87178eb58475",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "ScoreboardUI"
           },
           "WinScreen": {
             "_type": "component",
-            "component_id": "c63ba957-6420-479d-81ff-9bcb617b32c3",
-            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
-            "component_type": "Win"
+            "component_id": "faef1e85-f73d-46fb-88e4-60c0a3b56a40",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "EndPopup"
           }
         },
         {
@@ -124,43 +178,6 @@
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
           "ZIndex": 100
-        }
-      ]
-    },
-    {
-      "__guid": "94716edc-7c76-4373-9068-f18a964d0e37",
-      "Flags": 0,
-      "Name": "Screen",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "ad254495-64da-4ad6-a999-4ab166bd38df",
-          "AutoScreenScale": true,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "ConsistentHeight",
-          "ZIndex": 100
-        },
-        {
-          "__type": "ScoreHud",
-          "__guid": "443d32f9-8520-4595-87a2-a227c2ec601f",
-          "BoardManager": {
-            "_type": "component",
-            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
-            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
-            "component_type": "BoardManager"
-          }
-        },
-        {
-          "__type": "Win",
-          "__guid": "c63ba957-6420-479d-81ff-9bcb617b32c3",
-          "__enabled": false
-        },
-        {
-          "__type": "Lose",
-          "__guid": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
-          "__enabled": false
         }
       ]
     }

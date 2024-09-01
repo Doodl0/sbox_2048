@@ -1,0 +1,71 @@
+@using Sandbox;
+@using Sandbox.UI
+@inherits PanelComponent
+
+<root>
+	<div class="title">Leaderboard</div>
+    <div class="entry">@GetLeaderboardEntry(1)</div>
+    <div class="entry">@GetLeaderboardEntry(1)</div>
+    <div class="entry">@GetLeaderboardEntry(2)</div>
+    <div class="entry">@GetLeaderboardEntry(3)</div>
+    <div class="entry">@GetLeaderboardEntry(4)</div>
+    <div class="entry">@GetLeaderboardEntry(5)</div>
+    <div class="entry">@GetLeaderboardEntry(6)</div>
+    <div class="entry">@GetLeaderboardEntry(7)</div>
+    <div class="entry">@GetLeaderboardEntry(8)</div>
+    <div class="entry">@GetLeaderboardEntry(9)</div>
+    <div class="entry">@GetLeaderboardEntry(10)</div>
+    <div class="entry">@GetLeaderboardEntry(11)</div>
+    <div class="entry">@GetLeaderboardEntry(12)</div>
+    <div class="entry">@GetLeaderboardEntry(13)</div>
+    <div class="entry">@GetLeaderboardEntry(14)</div>
+</root>
+
+@code
+{
+
+    public Sandbox.Services.Leaderboards.Board2 leaderboard = Sandbox.Services.Leaderboards.GetFromStat("doodlzero.sbox_2048","score");
+
+    protected override void OnAwake() 
+    {
+        RefreshLeaderboard(15);
+    }
+
+    public async void RefreshLeaderboard( int maxEntries ) 
+    {
+        leaderboard.SetAggregationMax();
+        leaderboard.SetSortDescending();
+        leaderboard.CenterOnMe();
+        leaderboard.MaxEntries = maxEntries;
+        await leaderboard.Refresh();
+    }
+    
+    public string GetHighScore() 
+    {
+        string entrycontents = "0";
+        try
+        {
+            var entry = leaderboard.Entries[8];
+            entrycontents = $"{entry.Value}";
+        }
+        catch {}
+        return entrycontents;
+    }
+
+    public string GetLeaderboardEntry( int index )
+    {
+        var entrycontents = "Sorry, could not get leaderboard data";
+        try
+        {
+            var entry = leaderboard.Entries[index];
+            entrycontents = $"{entry.Rank}. {entry.DisplayName} - {entry.Value}";
+        }
+        catch { }
+        return entrycontents;
+    }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( leaderboard.Entries );
+}

@@ -1,0 +1,20 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="scoretitle">High Score</div>
+    <div class="score">@leaderboard.GetHighScore()</div>
+</root>
+
+@code
+{
+    [Property] BoardManager BoardManager { get; set; }
+    [Property] ScoreboardUI leaderboard { get; set; }
+    public bool Update = false;
+
+    /// <summary>
+    /// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+    /// </summary>
+    protected override int BuildHash() => System.HashCode.Combine( Update, leaderboard.leaderboard.Entries );
+}

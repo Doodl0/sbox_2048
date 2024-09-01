@@ -1,0 +1,25 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+    <div class="body">
+        <div class="title">Game Over</div>
+        <div class="text">Press to <img src="@restartGlyph.ResourcePath">continue</div>
+    </div>
+</root>
+
+@code
+{
+    [Property] string TitleContents { get; set; } = "Game Over";
+    Texture restartGlyph = Input.GetGlyph("restart", InputGlyphSize.Medium, false);
+    
+    protected override void OnUpdate() 
+    {
+        restartGlyph = Input.GetGlyph("restart", InputGlyphSize.Medium, false);
+    }
+    /// <summary>
+    /// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+    /// </summary>
+    protected override int BuildHash() => System.HashCode.Combine( "" );
+}

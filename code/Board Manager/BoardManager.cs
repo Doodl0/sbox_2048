@@ -1,15 +1,18 @@
 using Sandbox;
+using Sandbox.Services;
 using Sandbox.UI.Tests;
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 public sealed class BoardManager : Component
 {
 	[Property] BoardUI boardUI { get; set; }
-	[Property][Category( "End Screens" )] Win WinScreen { get; set; }
-	[Property][Category( "End Screens" )] Lose LoseScreen { get; set; }
-	[Property][Category( "Scoreboard" )] Scoreboard scoreboard { get; set; } 
+	[Property] HighScoreUI highScoreUI { get; set; }
+	[Property] ScoreboardUI scoreboard { get; set; }
+	[Property][Category( "End Screens" )] EndPopup WinScreen { get; set; }
+	[Property][Category( "End Screens" )] EndPopup LoseScreen { get; set; }
 
 	//Gets copied to ingame board
 	public int[,] Board =
@@ -288,6 +291,8 @@ public sealed class BoardManager : Component
 				if ( BoardWorking[y, x] >= 2048 ) 
 				{
 					Sandbox.Services.Stats.SetValue( "score", Score );
+					scoreboard.RefreshLeaderboard(15);
+					highScoreUI.Update = !highScoreUI.Update;
 					WinScreen.Enabled = true;
 					return true;
 				}
@@ -311,6 +316,8 @@ public sealed class BoardManager : Component
 		}
 
 		Sandbox.Services.Stats.SetValue( "score", Score );
+		scoreboard.RefreshLeaderboard(15);
+		highScoreUI.Update = !highScoreUI.Update;
 		LoseScreen.Enabled = true;
 		return true;
 	}

@@ -1,11 +1,12 @@
-ScoreHud {
+HighScoreUI {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 256px;
 	font-family: Poppins;
 	flex-direction: column;
 	padding: 16px;
 	align-items: flex-end;
+	color: lightgreen;
 
 	> .scoretitle {
 		text-align: right;

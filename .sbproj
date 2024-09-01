@@ -55,7 +55,7 @@
         },
         {
           "Name": "Restart",
-          "KeyboardCode": "ENTER",
+          "KeyboardCode": "mouse1",
           "GamepadCode": "A",
           "GroupName": "Other"
         }
