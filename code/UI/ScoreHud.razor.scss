@@ -1,26 +1,20 @@
 ScoreHud {
 	position: absolute;
-	top: 0;
-	left: 0;
 	right: 0;
-	bottom: 0;
+	top: 0;
 	font-family: Poppins;
-	font-size: 24px;
+	flex-direction: column;
+	padding: 16px;
+	align-items: flex-end;
 
 	> .scoretitle {
-		position: absolute;
-		top: 0px;
-		right: 25px;
-		text-align: left;
+		text-align: right;
 		font-size: 64px;
 		font-weight: bold;
 	}
 
 	> .score {
-		position: absolute;
-		top: 75px;
-		right: 25px;
-		text-align: left;
+		text-align: right;
 		font-size: 96px;
 		font-weight: bold;
 	}

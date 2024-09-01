@@ -1,0 +1,194 @@
+{
+  "__guid": "9f832399-4887-46b0-8f21-2ee284f538e2",
+  "GameObjects": [
+    {
+      "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "0,0,100",
+      "Rotation": "0.7071068,-0.00000003090862,-0.7071068,-0.00000003090862",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "a7e736d6-fe94-4134-b306-9b9ad535e341",
+          "BackgroundColor": "1,1,1,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": true,
+          "OrthographicHeight": 500,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Bloom",
+          "__guid": "31cbd4fc-7779-45eb-ac71-78dae66ccfce",
+          "__enabled": false,
+          "BloomColor": {
+            "color": [
+              {
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "BloomCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "Mode": "Additive",
+          "Strength": 0.5,
+          "Threshold": 0.5,
+          "ThresholdWidth": 0.5
+        },
+        {
+          "__type": "Sandbox.Tonemapping",
+          "__guid": "fb3c7d16-422c-45c9-861f-85cca3419344",
+          "__version": 1,
+          "__enabled": false,
+          "ExposureBias": 2,
+          "ExposureCompensation": 0,
+          "ExposureMethod": "RGB",
+          "MaximumExposure": 2,
+          "MinimumExposure": 1,
+          "Mode": "Legacy",
+          "Rate": 1
+        },
+        {
+          "__type": "Sandbox.Sharpen",
+          "__guid": "27cefe2e-e96d-4105-93b9-fecc90fb38fe",
+          "__enabled": false,
+          "Scale": 0.2
+        }
+      ]
+    },
+    {
+      "__guid": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+      "Flags": 0,
+      "Name": "Board Manager",
+      "Scale": "6,6,5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "BoardManager",
+          "__guid": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+          "boardUI": {
+            "_type": "component",
+            "component_id": "5cd44be0-2182-499c-8f4a-9581470fb87b",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardUI"
+          },
+          "LoseScreen": {
+            "_type": "component",
+            "component_id": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
+            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
+            "component_type": "Lose"
+          },
+          "WinScreen": {
+            "_type": "component",
+            "component_id": "c63ba957-6420-479d-81ff-9bcb617b32c3",
+            "go": "94716edc-7c76-4373-9068-f18a964d0e37",
+            "component_type": "Win"
+          }
+        },
+        {
+          "__type": "BoardUI",
+          "__guid": "5cd44be0-2182-499c-8f4a-9581470fb87b",
+          "board": {
+            "_type": "component",
+            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardManager"
+          }
+        },
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "5d76d424-8a67-43e0-a70c-16e4d8e9685c",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        }
+      ]
+    },
+    {
+      "__guid": "94716edc-7c76-4373-9068-f18a964d0e37",
+      "Flags": 0,
+      "Name": "Screen",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "ad254495-64da-4ad6-a999-4ab166bd38df",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "ScoreHud",
+          "__guid": "443d32f9-8520-4595-87a2-a227c2ec601f",
+          "BoardManager": {
+            "_type": "component",
+            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardManager"
+          }
+        },
+        {
+          "__type": "Win",
+          "__guid": "c63ba957-6420-479d-81ff-9bcb617b32c3",
+          "__enabled": false
+        },
+        {
+          "__type": "Lose",
+          "__guid": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
+          "__enabled": false
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 1,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

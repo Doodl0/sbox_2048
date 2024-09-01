@@ -3,22 +3,15 @@
 @inherits PanelComponent
 
 <root>
-	<div class="scoretitle">
-        <p>
-            Score
-        </p>
-    </div>
-    <div class="score">
-        <p>
-            @BoardManager.Score
-        </p>
-    </div>
+	<div class="scoretitle">Score</div>
+    <div class="score">@BoardManager.Score</div>
+    <div class="scoretitle" style="color: lightgreen;">High Score</div>
+    <div class="score" style="color: lightgreen;">@BoardManager.Score</div>
 </root>
 
 @code
 {
     [Property] BoardManager BoardManager { get; set; }
-
 
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt

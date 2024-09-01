@@ -6,25 +6,10 @@ using System.Runtime.InteropServices;
 
 public sealed class BoardManager : Component
 {
-	[Property][Category( "Board Spaces" )] GameObject Space00 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space01 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space02 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space03 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space10 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space11 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space12 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space13 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space20 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space21 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space22 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space23 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space30 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space31 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space32 { get; set; }
-	[Property][Category( "Board Spaces" )] GameObject Space33 { get; set; }
+	[Property] BoardUI boardUI { get; set; }
 	[Property][Category( "End Screens" )] Win WinScreen { get; set; }
 	[Property][Category( "End Screens" )] Lose LoseScreen { get; set; }
-	[Property][Category( "Scoreboard" )] Scoreboard scoreboard { get; set; }
+	[Property][Category( "Scoreboard" )] Scoreboard scoreboard { get; set; } 
 
 	//Gets copied to ingame board
 	public int[,] Board =
@@ -58,7 +43,7 @@ public sealed class BoardManager : Component
 	{
 		NewGame();
 	}
-	protected override void OnFixedUpdate()
+	protected override void OnUpdate()
 	{
 		if ( Win() == true )
 		{
@@ -79,43 +64,16 @@ public sealed class BoardManager : Component
 			else return;
 		}
 
-		if ( Input.Pressed( "Forward" ) || Input.Pressed( "Up" ) ) Up();
-		else if ( Input.Pressed( "Backward" ) || Input.Pressed( "Down" ) ) Down();
-		else if ( Input.Pressed( "Leftward" ) || Input.Pressed( "West" ) ) Left();
-		else if ( Input.Pressed( "Rightward" ) || Input.Pressed( "East" ) ) Right();
+		if ( Input.Pressed( "Up" ) ) Up();
+		else if ( Input.Pressed( "Down" ) ) Down();
+		else if ( Input.Pressed( "Left" ) ) Left();
+		else if ( Input.Pressed( "Right" ) ) Right();
 	}
 
 	void UpdateBoard()
 	{
-		var SpaceDictionary = new Dictionary<Vector2, GameObject>(){
-		{new Vector2(0,0), Space00},
-		{new Vector2(0,1), Space01},
-		{new Vector2(0,2), Space02},
-		{new Vector2(0,3), Space03},
-		{new Vector2(1,0), Space10},
-		{new Vector2(1,1), Space11},
-		{new Vector2(1,2), Space12},
-		{new Vector2(1,3), Space13},
-		{new Vector2(2,0), Space20},
-		{new Vector2(2,1), Space21},
-		{new Vector2(2,2), Space22},
-		{new Vector2(2,3), Space23},
-		{new Vector2(3,0), Space30},
-		{new Vector2(3,1), Space31},
-		{new Vector2(3,2), Space32},
-		{new Vector2(3,3), Space33},
-		};
-
 		Board = BoardWorking;
-
-		for ( int x = 0; x <= 3; x++ )
-		{
-			for ( int y = 0; y <= 3; y++ )
-			{
-				SpaceDictionary[new Vector2( x, y )].Tags.RemoveAll();
-				SpaceDictionary[new Vector2( x, y )].Tags.Add( Board[y,x].ToString() );
-			}
-		}
+		boardUI.Update = !boardUI.Update;
 	}
 
 	void Right() 
@@ -330,7 +288,6 @@ public sealed class BoardManager : Component
 				if ( BoardWorking[y, x] >= 2048 ) 
 				{
 					Sandbox.Services.Stats.SetValue( "score", Score );
-					scoreboard.Update();
 					WinScreen.Enabled = true;
 					return true;
 				}
@@ -354,7 +311,6 @@ public sealed class BoardManager : Component
 		}
 
 		Sandbox.Services.Stats.SetValue( "score", Score );
-		scoreboard.Update();
 		LoseScreen.Enabled = true;
 		return true;
 	}

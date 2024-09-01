@@ -8,6 +8,7 @@
   "Resources": null,
   "PackageReferences": [],
   "EditorReferences": null,
+  "IsWhitelistDisabled": false,
   "Metadata": {
     "MaxPlayers": 64,
     "MinPlayers": 1,
@@ -21,7 +22,7 @@
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/minimal.scene",
+    "StartupScene": "scenes/2048.scene",
     "ControlModes": {
       "Keyboard": true,
       "Gamepad": true
@@ -29,60 +30,38 @@
     "InputSettings": {
       "Actions": [
         {
-          "Name": "Forward",
-          "KeyboardCode": "W",
-          "GamepadCode": "None",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Backward",
-          "KeyboardCode": "S",
-          "GamepadCode": "None",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Leftward",
-          "KeyboardCode": "A",
-          "GamepadCode": "None",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Rightward",
-          "KeyboardCode": "D",
-          "GamepadCode": "None",
-          "GroupName": "Movement"
-        },
-        {
           "Name": "Up",
-          "KeyboardCode": "UPARROW",
+          "KeyboardCode": "W",
           "GamepadCode": "DpadNorth",
           "GroupName": "Movement"
         },
         {
           "Name": "Down",
-          "KeyboardCode": "DOWNARROW",
+          "KeyboardCode": "S",
           "GamepadCode": "DpadSouth",
           "GroupName": "Movement"
         },
         {
-          "Name": "West",
-          "KeyboardCode": "LEFTARROW",
+          "Name": "Left",
+          "KeyboardCode": "A",
           "GamepadCode": "DpadWest",
           "GroupName": "Movement"
         },
         {
-          "Name": "East",
-          "KeyboardCode": "RIGHTARROW",
+          "Name": "Right",
+          "KeyboardCode": "D",
           "GamepadCode": "DpadEast",
           "GroupName": "Movement"
         },
         {
           "Name": "Restart",
           "KeyboardCode": "ENTER",
+          "GamepadCode": "A",
           "GroupName": "Other"
         }
       ],
       "__guid": "ba52fa61-6bba-4ef1-8430-5fb64ba8f366"
-    }
+    },
+    "LaunchMode": "Normal"
   }
 }
