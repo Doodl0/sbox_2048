@@ -24,6 +24,7 @@ public sealed class BoardManager : Component
 	[Property][Category( "Board Spaces" )] GameObject Space33 { get; set; }
 	[Property][Category( "End Screens" )] Win WinScreen { get; set; }
 	[Property][Category( "End Screens" )] Lose LoseScreen { get; set; }
+	[Property][Category( "Scoreboard" )] Scoreboard scoreboard { get; set; }
 
 	//Gets copied to ingame board
 	public int[,] Board =
@@ -329,6 +330,7 @@ public sealed class BoardManager : Component
 				if ( BoardWorking[y, x] >= 2048 ) 
 				{
 					Sandbox.Services.Stats.SetValue( "score", Score );
+					scoreboard.Update();
 					WinScreen.Enabled = true;
 					return true;
 				}
@@ -352,6 +354,7 @@ public sealed class BoardManager : Component
 		}
 
 		Sandbox.Services.Stats.SetValue( "score", Score );
+		scoreboard.Update();
 		LoseScreen.Enabled = true;
 		return true;
 	}

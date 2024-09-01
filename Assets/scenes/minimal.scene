@@ -3,12 +3,11 @@
   "GameObjects": [
     {
       "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+      "Flags": 0,
       "Name": "Sun",
       "Rotation": "-0.00000008039427,0.7071068,0.00000008039427,0.7071068",
       "Tags": "light_directional,light",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.DirectionalLight",
@@ -23,12 +22,11 @@
     },
     {
       "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+      "Flags": 0,
       "Name": "Camera",
       "Position": "0,0,100",
       "Rotation": "0.7071068,-0.00000003090862,-0.7071068,-0.00000003090862",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.CameraComponent",
@@ -80,10 +78,14 @@
         {
           "__type": "Sandbox.Tonemapping",
           "__guid": "fb3c7d16-422c-45c9-861f-85cca3419344",
+          "__version": 1,
           "__enabled": false,
+          "ExposureBias": 2,
           "ExposureCompensation": 0,
+          "ExposureMethod": "RGB",
           "MaximumExposure": 2,
           "MinimumExposure": 1,
+          "Mode": "Legacy",
           "Rate": 1
         },
         {
@@ -96,11 +98,10 @@
     },
     {
       "__guid": "6ad70641-3c6c-4402-9c85-9a4969af4764",
+      "Flags": 0,
       "Name": "Grid",
       "Scale": "5,5,5",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ModelRenderer",
@@ -115,12 +116,11 @@
       "Children": [
         {
           "__guid": "e966e5ed-8a16-466a-8b51-f732e30b2554",
+          "Flags": 0,
           "Name": "0,0",
           "Position": "-35,35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -135,12 +135,11 @@
         },
         {
           "__guid": "7f4be0da-8c89-491f-ae3d-62269d37bdcd",
+          "Flags": 0,
           "Name": "0,1",
           "Position": "-11.66667,35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -155,12 +154,11 @@
         },
         {
           "__guid": "5636f441-07ab-469d-bce1-516d2f2cd2a2",
+          "Flags": 0,
           "Name": "0,2",
           "Position": "11.66667,35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -175,12 +173,11 @@
         },
         {
           "__guid": "14632094-2e3b-4085-841b-c31ae923726e",
+          "Flags": 0,
           "Name": "0,3",
           "Position": "35,35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -195,12 +192,11 @@
         },
         {
           "__guid": "52d504ba-7ef4-4a61-af15-b4d35b1eab4e",
+          "Flags": 0,
           "Name": "1,0",
           "Position": "-35,11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -215,12 +211,11 @@
         },
         {
           "__guid": "5aabb793-b80e-4f33-b905-477047efce90",
+          "Flags": 0,
           "Name": "1,1",
           "Position": "-11.66667,11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -235,12 +230,11 @@
         },
         {
           "__guid": "5d224ff8-c355-4701-af43-9057211f827d",
+          "Flags": 0,
           "Name": "1,2",
           "Position": "11.66667,11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -255,12 +249,11 @@
         },
         {
           "__guid": "a4474851-1bec-4650-8d17-f8da527ada4c",
+          "Flags": 0,
           "Name": "1,3",
           "Position": "35,11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -275,12 +268,11 @@
         },
         {
           "__guid": "4ad538fa-9c84-4cb1-a1b7-c5735ca7f972",
+          "Flags": 0,
           "Name": "2,0",
           "Position": "-35,-11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -295,12 +287,11 @@
         },
         {
           "__guid": "438dc3d9-a5c6-47dc-9e64-03b3355b35a2",
+          "Flags": 0,
           "Name": "2,1",
           "Position": "-11.66667,-11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -315,12 +306,11 @@
         },
         {
           "__guid": "b9fa6f91-2705-44cd-a538-2176011750de",
+          "Flags": 0,
           "Name": "2,2",
           "Position": "11.66667,-11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -335,12 +325,11 @@
         },
         {
           "__guid": "1f7027e5-7178-4de5-b847-5aebac4642a6",
+          "Flags": 0,
           "Name": "2,3",
           "Position": "35,-11.66667,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -355,12 +344,11 @@
         },
         {
           "__guid": "ce5200a3-b432-4b75-b728-8ddf391e183e",
+          "Flags": 0,
           "Name": "3,0",
           "Position": "-35,-35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -375,12 +363,11 @@
         },
         {
           "__guid": "85a5b5ed-44c4-4916-8a9d-a84435837033",
+          "Flags": 0,
           "Name": "3,1",
           "Position": "-11.66667,-35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -395,12 +382,11 @@
         },
         {
           "__guid": "8724b2b5-4157-429e-a66a-63c9a1ba1dbd",
+          "Flags": 0,
           "Name": "3,2",
           "Position": "11.66667,-35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -415,12 +401,11 @@
         },
         {
           "__guid": "fb3967df-85fd-4376-a40d-72ab65ad84fb",
+          "Flags": 0,
           "Name": "3,3",
           "Position": "35,-35,2",
           "Scale": "0.2,0.2,0.2",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -437,11 +422,10 @@
     },
     {
       "__guid": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+      "Flags": 0,
       "Name": "Board Manager",
       "Scale": "6,6,5",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "BoardManager",
@@ -451,6 +435,12 @@
             "component_id": "7bd3b8f9-3fe3-4237-ab94-40446fda31df",
             "go": "94716edc-7c76-4373-9068-f18a964d0e37",
             "component_type": "Lose"
+          },
+          "scoreboard": {
+            "_type": "component",
+            "component_id": "53bfdea2-d875-4e59-845b-c2a58cf6eba0",
+            "go": "978cddea-db9a-4bb5-8634-4349beb55be3",
+            "component_type": "Scoreboard"
           },
           "Space00": {
             "_type": "gameobject",
@@ -527,12 +517,11 @@
       "Children": [
         {
           "__guid": "85a36b4b-53f7-421d-87f1-95a2f38f157e",
+          "Flags": 0,
           "Name": "0,3",
           "Position": "29.16667,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -568,12 +557,11 @@
         },
         {
           "__guid": "c368e9b3-145c-47f5-825c-8d04cd886947",
+          "Flags": 0,
           "Name": "0,2",
           "Position": "9.722222,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -609,12 +597,11 @@
         },
         {
           "__guid": "4e45e6a6-94c2-40d6-9dfa-3e12eee3b060",
+          "Flags": 0,
           "Name": "0,1",
           "Position": "-9.722222,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -650,12 +637,11 @@
         },
         {
           "__guid": "0e189118-874b-4f9d-991a-f2f4d68ee8d9",
+          "Flags": 0,
           "Name": "0,0",
           "Position": "-29.16667,-29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -691,12 +677,11 @@
         },
         {
           "__guid": "d90ffc30-664f-4277-b3a5-43848379b9f4",
+          "Flags": 0,
           "Name": "1,3",
           "Position": "29.16667,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -732,12 +717,11 @@
         },
         {
           "__guid": "ad9561bd-7ff3-4d07-9e12-64b46db21a89",
+          "Flags": 0,
           "Name": "1,2",
           "Position": "9.722222,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -773,12 +757,11 @@
         },
         {
           "__guid": "36a1f3c3-6fec-440b-a9bd-b9020885b796",
+          "Flags": 0,
           "Name": "1,1",
           "Position": "-9.722222,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -814,12 +797,11 @@
         },
         {
           "__guid": "b7c2e80b-1c28-437e-8f79-c33fcf21cb73",
+          "Flags": 0,
           "Name": "1,0",
           "Position": "-29.16667,-9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -855,12 +837,11 @@
         },
         {
           "__guid": "66fc1a67-df99-49f3-90b0-75d2070c83aa",
+          "Flags": 0,
           "Name": "2,3",
           "Position": "29.16667,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -896,12 +877,11 @@
         },
         {
           "__guid": "cab47eab-c812-4c50-ac12-8a0cf2cc9594",
+          "Flags": 0,
           "Name": "2,2",
           "Position": "9.722222,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -937,12 +917,11 @@
         },
         {
           "__guid": "0fc164b8-628e-48a6-827f-6f24f689edcc",
+          "Flags": 0,
           "Name": "2,1",
           "Position": "-9.722222,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -978,12 +957,11 @@
         },
         {
           "__guid": "9c5fa493-90f6-4dd0-8925-a602df4a893c",
+          "Flags": 0,
           "Name": "2,0",
           "Position": "-29.16667,9.722222,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1019,12 +997,11 @@
         },
         {
           "__guid": "7650279e-6631-4ea9-ad47-6d455201e919",
+          "Flags": 0,
           "Name": "3,3",
           "Position": "29.16667,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1060,12 +1037,11 @@
         },
         {
           "__guid": "4d5b38c5-66ae-44e0-a045-fac7e7807dd3",
+          "Flags": 0,
           "Name": "3,2",
           "Position": "9.722222,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1101,12 +1077,11 @@
         },
         {
           "__guid": "ccada34e-d412-4018-9df2-ea48c835a365",
+          "Flags": 0,
           "Name": "3,1",
           "Position": "-9.722222,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1142,12 +1117,11 @@
         },
         {
           "__guid": "68ab2994-fb50-4949-8b18-71628607ed12",
+          "Flags": 0,
           "Name": "3,0",
           "Position": "-29.16667,29.16667,3",
           "Scale": "0.15,0.15,0.15",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1185,10 +1159,9 @@
     },
     {
       "__guid": "94716edc-7c76-4373-9068-f18a964d0e37",
+      "Flags": 0,
       "Name": "Screen",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.ScreenPanel",
@@ -1242,21 +1215,26 @@
     },
     {
       "__guid": "978cddea-db9a-4bb5-8634-4349beb55be3",
+      "Flags": 0,
       "Name": "Scoreboard",
       "Position": "109.3316,-27.61295,337.7981",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Scoreboard",
-          "__guid": "53bfdea2-d875-4e59-845b-c2a58cf6eba0"
+          "__guid": "53bfdea2-d875-4e59-845b-c2a58cf6eba0",
+          "board": {
+            "_type": "component",
+            "component_id": "261eed25-cb4b-4a9d-a928-eddc7d0cad65",
+            "go": "a6819800-f8a6-4255-9563-c91dcf86eb5d",
+            "component_type": "BoardManager"
+          }
         }
       ]
     }
   ],
   "SceneProperties": {
-    "FixedUpdateFrequency": 50,
+    "FixedUpdateFrequency": 1,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
     "NetworkInterpolation": true,
@@ -1278,8 +1256,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-05-02T16:23:48.6795073\u002B01:00",
   "ResourceVersion": 1,
-  "__version": 1,
-  "__references": []
+  "__references": [],
+  "__version": 1
 }

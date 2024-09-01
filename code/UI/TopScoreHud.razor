@@ -10,7 +10,7 @@
     </div>
     <div class="score">
         <p>
-            @scoreboard.playerscore
+            @scoreboard.topscore
         </p>
     </div>
 </root>
@@ -22,5 +22,5 @@
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine( scoreboard.playerscore );
+	protected override int BuildHash() => System.HashCode.Combine( scoreboard.topscore );
 }
